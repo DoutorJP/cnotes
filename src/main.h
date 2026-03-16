@@ -17,9 +17,9 @@
 
 void parse_flags(int, char**);
 void cli_homepage();
-void new_desk();
-void open_desks();
-void desk_opts();
+//void new_desk();
+//void open_desks();
+//void desk_opts();
 
 void parse_flags(int argc, char** argv){
   if(argc > 1){
@@ -28,14 +28,14 @@ void parse_flags(int argc, char** argv){
 }
 
 
-void desk_opts(){
+/*void desk_opts(){
   printf("Options:\n\t1 - New desk\n\t2 - Desks\n");
   printf("\n\nOption: ");
   int opt = get_option();
   //parse_option(opt);
 
 }
-
+*/
 void cli_homepage(){
   system("clear");
   while(1){
@@ -48,7 +48,7 @@ void cli_homepage(){
   }
 }
 
-
+/*
 void new_desk(){
   puts("New desk name (single word while on beta):");
   char name[256];
@@ -71,7 +71,7 @@ void open_desks(){
   scanf("%d", &opt);
   printf("─────────────────────────────────────────────────────────────────────\n");
 }
-
+*/
 
 
 #endif
